@@ -8,15 +8,19 @@ const {
   getArticlesByCategory,
   getArticlesByTag,
 } = require("./articles");
+const { save, fetch } = require("./data");
 
 app.use(
   cors({
-    origin: "http://localhost:4200",
+    origin: "*",
   })
 );
 
+save();
+
 app.get("/api/articles", async (req, res) => {
-  const articles = await getAllArticles();
+  //const articles = await getAllArticles();
+  const articles = await fetch();
   res.send({
     success: true,
     articles,

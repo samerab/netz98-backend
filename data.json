@@ -1,0 +1,730 @@
+{
+  "articles": [
+    {
+      "id": "post-1177",
+      "imgSrc": "https://dev98.de/wp-content/uploads/2020/07/magentoajax1.png",
+      "link": "https://dev98.de/2020/09/14/ajax-loading-of-related-products-in-magento-2/",
+      "title": "AJAX loading of related products in Magento 2",
+      "pubDate": "2020-09-14T10:19:22+02:00",
+      "author": "Alexander Dite",
+      "summary": "Introduction In some projects the amount of related products can be significant. In my case there were more than 300 related products and upsell products on some product detail pages. The consequence of this was a high time to first byte on product detail pages. In the mentioned project it was about 15 seconds for some of the products. So we searched for a possible optimization. We finally decided to implement asynchronous loading of product recommendations via AJAX. At the…",
+      "categories": [
+        "magento-2"
+      ],
+      "tags": [
+        "ajax",
+        "catalog",
+        "optimization",
+        "performance",
+        "products",
+        "related"
+      ]
+    },
+    {
+      "id": "post-1104",
+      "imgSrc": "https://dev98.de/wp-content/uploads/2019/06/dev98-Guzzle-Proxy-1.png",
+      "link": "https://dev98.de/2019/06/19/request-data-through-a-proxy-with-guzzlehttp-psr-7-compliant/",
+      "title": "Request data through a proxy with GuzzleHttp – PSR-7 compliant",
+      "pubDate": "2019-06-19T11:26:09+02:00",
+      "author": "Elias Henrich",
+      "summary": "When a Magento shop – or any other PHP application – is required to request data from or transmit data to a remote server, it is often necessary to redirect the traffic through a Http-proxy server. In my case this was essential because the called endpoint allows only certain IP addresses to access the requested ressource. Since I am working from various locations, each having a different IP address, I had to find a way that certain Http-requests are routed…",
+      "categories": [
+        "general"
+      ],
+      "tags": [
+        "guzzlehttp",
+        "http",
+        "magento2",
+        "proxy",
+        "psr",
+        "psr-7"
+      ]
+    },
+    {
+      "id": "post-1061",
+      "imgSrc": "https://dev98.de/wp-content/uploads/2019/04/IMG_20190315_092933_crop-1038x576.jpg",
+      "link": "https://dev98.de/2019/04/10/a-visit-at-our-friends-of-atwix-in-lviv-ukraine/",
+      "title": "A visit at our friends of Atwix in Lviv/Ukraine",
+      "pubDate": "2019-04-10T17:38:03+02:00",
+      "author": "Christian Münch",
+      "summary": "Last month we received an invitation by our friends of Atwix to attend their Barcamp in Lviv/Ukraine. My colleague Oleksandr and me were happy to join it. Oleksandr was the perfect mate, because he was grown up in Ukraine and so he knows everything about the traditions and local specialities. Our journey started in Frankfurt. After a stopover in Munich we arrived on site with enough energy to explore the beautiful city of Lviv. Oleksandr introduced me to the local…",
+      "categories": [
+        "general"
+      ],
+      "tags": []
+    },
+    {
+      "id": "post-998",
+      "imgSrc": "https://dev98.de/wp-content/uploads/2018/07/CPiQnJenlP5VkD9rqwT9aA_r-Kopie.jpg",
+      "link": "https://dev98.de/2018/07/23/how-a-wrong-carrier-implementation-causes-a-server-outage/",
+      "title": "How a wrong carrier implementation causes a server outage",
+      "pubDate": "2018-07-23T10:00:26+02:00",
+      "author": "Alexander Dite",
+      "summary": "Sometimes one wrong line of code can break your site. In the following I will describe a mistake in a Magento 2 custom carrier implementation, which causes a massive overloading of server resources (CPU, RAM, DB processes) and even can cause an outage of your Magento store. The one line of code The following line of code is the reason for the problems, if used in the collectRates() method, or in methods, called from collectRates() in the Carrier class: $quote…",
+      "categories": [
+        "magento-2"
+      ],
+      "tags": [
+        "performance"
+      ]
+    },
+    {
+      "id": "post-951",
+      "link": "https://dev98.de/2018/01/24/how-to-avoid-security-issues-in-composer-dependencies/",
+      "title": "How to avoid security issues in Composer dependencies",
+      "pubDate": "2018-01-24T10:09:46+01:00",
+      "author": "Christoph Frenes",
+      "summary": "Composer is a great tool for requiring third party modules and software packages for your project. It’s an essential part of the current Magento 2 project structure. Because of the possibility to add more and more modules it is also getting more and more difficult to keep track of relevant security updates. That is especially the case when required modules have further requirements. Here are 3 tips how to improve your project’s security 1. Subscription of third party repositories (when…",
+      "categories": [
+        "general"
+      ],
+      "tags": [
+        "composer",
+        "security",
+        "versioning"
+      ]
+    },
+    {
+      "id": "post-924",
+      "imgSrc": "https://dev98.de/wp-content/uploads/2018/01/img_dev98_20170115_server-feature_cm.png",
+      "link": "https://dev98.de/2018/01/02/psr-7-standard-part-6-server-requests/",
+      "title": "PSR-7 Standard  – Part 6 – Server Requests",
+      "pubDate": "2018-01-02T01:47:23+01:00",
+      "author": "Christian Münch",
+      "summary": "This post is part of series: Part 1: Overview Part 2: Request and URI Part 3: Response Part 4: File Uploads Part 5: HTTP-Client Part 6: Server Request Part 7: Middleware Part 8: Usage in a Magento module In Part 3 we already discovered the RequestInterface which is used on client side. In this part, we have a more detailed look on the server side. The Server Request inherits all methods of the RequestInterface and has 13 additional methods. Six methods are available to…",
+      "categories": [
+        "general"
+      ],
+      "tags": [
+        "cookie",
+        "get",
+        "post",
+        "psr",
+        "server",
+        "serverrequest"
+      ]
+    },
+    {
+      "id": "post-901",
+      "imgSrc": "https://dev98.de/wp-content/uploads/2017/12/img_dev98_20170115_http-client-feature_cm.png",
+      "link": "https://dev98.de/2017/12/27/psr-7-standard-part-5-http-client/",
+      "title": "PSR-7 Standard  – Part 5  – HTTP Client",
+      "pubDate": "2017-12-27T10:00:30+01:00",
+      "author": "Christian Münch",
+      "summary": "This post is part of series: Part 1: Overview Part 2: Request and URI Part 3: Response Part 4: File Uploads Part 5: HTTP-Client Part 6: Server Request Part 7: Middleware Part 8: Usage in a Magento module The fifth part of the PSR-7 series describes the HTTP Client. The HTTP client is tool which sends a request to a server and returns the response. Sadly PSR-7 does not contain an interface for the HTTP client. The Standard contains only the HTTP messages. The…",
+      "categories": [
+        "general"
+      ],
+      "tags": [
+        "client",
+        "http",
+        "psr"
+      ]
+    },
+    {
+      "id": "post-885",
+      "imgSrc": "https://dev98.de/wp-content/uploads/2017/12/img_dev98_20171208_dev-to-localhost.png",
+      "link": "https://dev98.de/2017/12/08/chrome-63-vs-dev-domains/",
+      "title": "Chrome 63 vs. dev domains",
+      "pubDate": "2017-12-08T10:15:24+01:00",
+      "author": "Matthias Walter",
+      "summary": "With the recent update to version 63 for Chrome they introduced a feature, that redirects all *.dev  calls from HTTP to HTTPS. If you are using *.dev  domains to access your development machine, this behaviour is probably not what you want for all your local urls. Configuring dnsmasq At netz98 we are using dnsmasq to redirect all *.dev  calls to our localhost. dnsmasq has a setting where you can easily change this to another domain like *.localhost . First of locate…",
+      "categories": [
+        "general"
+      ],
+      "tags": []
+    },
+    {
+      "id": "post-867",
+      "imgSrc": "https://dev98.de/wp-content/uploads/2017/11/img_dev98_20170115_file-uploads-feature_cm.png",
+      "link": "https://dev98.de/2017/11/25/psr-7-standard-part-4-file-uploads/",
+      "title": "PSR-7 Standard  – Part 4 – File Uploads",
+      "pubDate": "2017-11-25T14:22:17+01:00",
+      "author": "Christian Münch",
+      "summary": "This post is part of series: Part 1: Overview Part 2: Request and URI Part 3: Response Part 4: File Uploads Part 5: HTTP-Client Part 6: Server Request Part 7: Middleware Part 8: Usage in a Magento module After we learned what a Request and a Response are, let’s now look how we can send files to the server. Then have a look on how we can process them with Guzzle on the server side. Client Side Script As you can see in the…",
+      "categories": [
+        "general"
+      ],
+      "tags": [
+        "http",
+        "psr",
+        "upload"
+      ]
+    },
+    {
+      "id": "post-849",
+      "imgSrc": "https://dev98.de/wp-content/uploads/2017/11/docker-mailhog-php.png",
+      "link": "https://dev98.de/2017/11/20/run-mailhog-in-docker-and-use-it-in-php/",
+      "title": "Run Mailhog in Docker and use it in PHP",
+      "pubDate": "2017-11-20T11:45:31+01:00",
+      "author": "Christian Münch",
+      "summary": "This post describes how you can install and configure Mailhog as SMTP Server for your local PHP development environment. This is useful to catch all outgoing emails. A running PHP and Docker environment is required to follow the instructions. Install Mailhog On my local machine, I have docker-compose.yml file which contains a lot of services (e.g MySQL, Elastic, Redis) which I use during the daily development. For our mailhog example we need only one service. Please create a docker-compose.yml with…",
+      "categories": [
+        "general"
+      ],
+      "tags": [
+        "mailhog",
+        "php",
+        "smtp"
+      ]
+    },
+    {
+      "id": "post-836",
+      "imgSrc": "https://dev98.de/wp-content/uploads/2017/11/img_dev98_sequence-of-magento2-setup.png",
+      "link": "https://dev98.de/2017/11/13/sequence-of-magento-2-install-upgrade-recurring-scripts/",
+      "title": "Sequence of Magento 2 Install / Upgrade / Recurring scripts",
+      "pubDate": "2017-11-13T11:41:34+01:00",
+      "author": "Alexander Dite",
+      "summary": "Preamble In one of my last tasks I had to write an upgrade script in which an assignment of a newly created frontend theme to some of the stores should be implemented. The following code-part describes what I did here: /** * */ protected function assignNewThemeToSelectedStores() { $storeIdsForNewTheme = []; foreach ($this->storesCodesWithNewTheme as $storeCode) { $storeIdsForNewTheme[] = $this->storeRepository->get($storeCode)->getId(); } /** @var \\Magento\\Theme\\Model\\ResourceModel\\Theme\\Collection $themes */ $themes = $this->themeCollectionFactory->create()->loadRegisteredThemes(); /** * @var \\Magento\\Theme\\Model\\Theme $theme */ foreach ($themes as $theme) { if ($theme->getCode()…",
+      "categories": [
+        "magento-2"
+      ],
+      "tags": [
+        "install",
+        "magento2",
+        "recurring",
+        "script",
+        "setup",
+        "upgrade"
+      ]
+    },
+    {
+      "id": "post-815",
+      "imgSrc": "https://dev98.de/wp-content/uploads/2017/10/img_dev98_20170115_response-feature_cm.png",
+      "link": "https://dev98.de/2017/10/19/psr-7-standard-part-3-response/",
+      "title": "PSR-7 Standard  – Part 3  – Response",
+      "pubDate": "2017-10-19T12:57:14+02:00",
+      "author": "Christian Münch",
+      "summary": "This post is part of series: Part 1: Overview Part 2: Request and URI Part 3: Response Part 4: File Uploads Part 5: HTTP-Client Part 6: Server Request Part 7: Middleware Part 8: Usage in a Magento module In the last blog post we described the RequestInterface of PSR-7. Every application will process this request and returns a response to the calling client. The response is the part where a backend sends a result of an server operation back to the client. Let’s view…",
+      "categories": [
+        "general"
+      ],
+      "tags": [
+        "psr",
+        "response"
+      ]
+    },
+    {
+      "id": "post-794",
+      "imgSrc": "https://dev98.de/wp-content/uploads/2017/09/img_dev98_20170909_get-pdf-files-by-webapi_cm.png",
+      "link": "https://dev98.de/2017/09/10/get-pdf-files-by-magento-webapi/",
+      "title": "Get PDF files by Magento Webapi",
+      "pubDate": "2017-09-10T21:25:08+02:00",
+      "author": "Christian Münch",
+      "summary": "Magento 2 comes with a modern REST interface. One of the advantages of the REST interface is that it can handle multiple response types. A client can request data from the server with a list of acceptable response formats. Out of the box Magento 2 supports two types. It comes with JSON and XML support. You can test it with a simple call to your local store. curl -X GET –header “Accept: application/json” “http://<store-baseurl>/rest/default/V1/categories” If you omit the accept header…",
+      "categories": [
+        "magento-2"
+      ],
+      "tags": [
+        "api",
+        "pdf",
+        "webapi"
+      ]
+    },
+    {
+      "id": "post-778",
+      "imgSrc": "https://dev98.de/wp-content/uploads/2017/09/img-dev98_think-outsite-the-box.png",
+      "link": "https://dev98.de/2017/09/01/think-outside-the-box-14-magento-2-as-api-framework/",
+      "title": "Think outside the box: Magento 2 as API framework",
+      "pubDate": "2017-09-01T11:06:09+02:00",
+      "author": "Simon Schröer",
+      "summary": "In this article, we will cover the web-API and how to use Magento 2 as a standalone API-framework. If the web-API is new to you, I recommend to read the development documentation of it first: Magento 2 API documentation Why should I do this? Short answer: Because you can! Not really, there is no reason why you shouldn’t try it at least and have some fun with it – you might get used to it 😉 With Magento 2, the…",
+      "categories": [
+        "magento-2"
+      ],
+      "tags": [
+        "api",
+        "framework",
+        "headless",
+        "webapi"
+      ]
+    },
+    {
+      "id": "post-747",
+      "imgSrc": "https://dev98.de/wp-content/uploads/2017/07/img_dev98_20170703_psr-7-request-and-uri-feature_cm.png",
+      "link": "https://dev98.de/2017/07/03/psr-7-standard-part-2-request-and-uri/",
+      "title": "PSR-7 Standard – Part 2 – Request and URI",
+      "pubDate": "2017-07-03T10:40:55+02:00",
+      "author": "Christian Münch",
+      "summary": "This post is part of series: Part 1: Overview Part 2: Request and URI Part 3: Response Part 4: File Uploads Part 5: HTTP-Client Part 6: Server Request Part 7: Middleware Part 8: Usage in a Magento module In the last blog post we described the history of PSR-7. The standard contains only interfaces. Today we start with the first two interfaces. The RequestInterface and the UriInterface. What is a HTTP Request? To start we create a little server simulation script with this content:…",
+      "categories": [
+        "general"
+      ],
+      "tags": [
+        "http",
+        "psr",
+        "request",
+        "uri"
+      ]
+    },
+    {
+      "id": "post-672",
+      "imgSrc": "https://dev98.de/wp-content/uploads/2017/05/featured_-meet_magento_de_2017.png",
+      "link": "https://dev98.de/2017/05/29/recap-meet-magento-2017-germany/",
+      "title": "Recap Meet Magento 2017 Germany",
+      "pubDate": "2017-05-29T14:41:51+02:00",
+      "author": "Matthias Walter",
+      "summary": "After attending my 10th Meet Magento in Germany (yes I missed one) and coming back to work, I think it is time for a short recap. This years Meet Magento probably was the biggest one in terms of number of attendants (800, according to the organizers). The location was at it’s limits for that amount of people. Luckily the weather was sunny so people could get outside and get some space. The next years Meet Magento will probably / hopefully…",
+      "categories": [
+        "general"
+      ],
+      "tags": []
+    },
+    {
+      "id": "post-629",
+      "imgSrc": "https://dev98.de/wp-content/uploads/2017/04/titel-1038x549.jpg",
+      "link": "https://dev98.de/2017/04/27/review-of-the-magento-imagine-2017-from-a-personal-point-of-view-and-a-frontend-perspective/",
+      "title": "Review of the Magento Imagine 2017 from a personal point of view and a frontend perspective",
+      "pubDate": "2017-04-27T21:51:15+02:00",
+      "author": "Maria Kern",
+      "summary": "The Imagine: The Magento event as such! To me as an USA newbie on the one hand interesting because the conference takes place in Las Vegas, to me as a frontend developer on the other hand interesting because you can learn much about how Magento itself, but the community as well – like other developers, agencies and webshop operators – are working with the e-commerce platform and continuously developing it further. Let’s start at the beginning: Las Vegas is truly…",
+      "categories": [
+        "general"
+      ],
+      "tags": [
+        "devexchange",
+        "frontend",
+        "imagine",
+        "las-vegas",
+        "progressive-web-apps",
+        "ui-components"
+      ]
+    },
+    {
+      "id": "post-534",
+      "imgSrc": "https://dev98.de/wp-content/uploads/2017/04/img_dev98_20170417_header_cm.png",
+      "link": "https://dev98.de/2017/04/18/my-personal-recap-of-magento-imagine-2017-in-las-vegas/",
+      "title": "My personal recap of Magento Imagine 2017 in Las Vegas",
+      "pubDate": "2017-04-18T09:11:38+02:00",
+      "author": "Christian Münch",
+      "summary": "It was the second time that I attended the Magento Imagine. Last year the conference was characterized by the motto „We are Magento“. This year the word „E-Commerce Platform“ stays in my mind. Before I start my summary of the conference, I would like to tell a little bit about our trip … We startet our #RoadToImagine from Frankfurt/Main. After a 9h flight we (Maria, Ralf, Alex and me) arrived in Houston (Texas). There we had time to grab some pizzas after a…",
+      "categories": [
+        "general"
+      ],
+      "tags": [
+        "community",
+        "devexchange",
+        "hackathon",
+        "imagine",
+        "las-vegas",
+        "magento",
+        "roadtrip",
+        "strip"
+      ]
+    },
+    {
+      "id": "post-440",
+      "link": "https://dev98.de/2017/03/09/use-eavsetup-to-import-attributes/",
+      "title": "Use EavSetup to Import Attributes",
+      "pubDate": "2017-03-09T13:18:56+01:00",
+      "author": "Christian Walter",
+      "summary": "I recently had the issue that I needed to use the \\Magento\\Eav\\Setup\\EavSetup outside the setup-context. To be a bit more concrete, I wanted to import attribute-sets, attributes and attribute-options without using an install-script. My first idea was in magento2 you can easily inject the ‘EavSetup’ via constructor injection and then use it in your own class First try So I injected into my class which worked out well in the development-mode. /** * SomeAttribute constructor. * * @param \\Some\\Own\\AttributeContext $context *…",
+      "categories": [
+        "general"
+      ],
+      "tags": [
+        "di",
+        "eav",
+        "setup-attributes"
+      ]
+    },
+    {
+      "id": "post-453",
+      "imgSrc": "https://dev98.de/wp-content/uploads/2017/03/img_dev98_20170305_swagger-api-client-generated-featured2_cm.png",
+      "link": "https://dev98.de/2017/03/07/use-swagger-to-generate-a-magento-api-client/",
+      "title": "Use Swagger to generate a full functional Magento API Client",
+      "pubDate": "2017-03-07T09:00:32+01:00",
+      "author": "Christian Münch",
+      "summary": "Magento 2 comes with a nice swagger schema which describes the Webapi. The Magento guys were very clever to choose swagger. It not only comes with a schema, but moreover it is a complete interactive API client as well. A swagger schema is a JSON document to formalize the REST API. Formalized documents have the big advantage that you can process the data with a machine. One idea I had was to create a PHP API for the Magento 2 API. Fortunately the swagger…",
+      "categories": [
+        "magento-2"
+      ],
+      "tags": [
+        "codegenerator",
+        "swagger",
+        "webapi"
+      ]
+    },
+    {
+      "id": "post-429",
+      "link": "https://dev98.de/2017/03/03/nice-to-know-install-n98-magerun-via-composer/",
+      "title": "Nice to know: Install N98-Magerun via Composer",
+      "pubDate": "2017-03-03T13:29:12+01:00",
+      "author": "Tom Klingenberg",
+      "summary": "There is a so far merely undocumented installation procedure for Magerun that is extremely handy in project configurations. You just require Magerun within the Magento project and you can then execute it from the vendor’s bin folder: $ composer require n98/magerun2 […] $ ./vendor/bin/n98-magerun2 –version n98-magerun2 version 1.3.2 by netz98 GmbH Afterwards if you commit the composer.json  and composer.lock  files it is a take-away for the whole team. So it is regardless whether you’re running it locally, inside a docker…",
+      "categories": [
+        "devop",
+        "general",
+        "magento-2"
+      ],
+      "tags": [
+        "magerun"
+      ]
+    },
+    {
+      "id": "post-382",
+      "imgSrc": "https://dev98.de/wp-content/uploads/2017/03/magedeploy2-graph.png",
+      "link": "https://dev98.de/2017/03/01/introducing-magedeploy2/",
+      "title": "Introducing MageDeploy2",
+      "pubDate": "2017-03-01T16:02:25+01:00",
+      "author": "Matthias Walter",
+      "summary": "In our recent post series about Deploying Magento2 using Jenkins and deployer I was showing you how our Deployments are set up. In case you haven’t read them and are interested in the details here are the links: History and Overview of Magento2 Deployment Jenkins Build-Pipeline Setup (building assets, controlling the deployment) Releasing to Production (delivering code and assets, managing releases) Future Prospect (cloud deployment, artifacts) During the time of writing those articles I realized quite some improvements and generalizations that could be…",
+      "categories": [
+        "general",
+        "magento-2"
+      ],
+      "tags": [
+        "automation",
+        "build",
+        "deployer",
+        "deployment",
+        "magedeploy2",
+        "magento2",
+        "tools"
+      ]
+    },
+    {
+      "id": "post-204",
+      "imgSrc": "https://dev98.de/wp-content/uploads/2017/02/n98_push_deployment_process_future_overview.png",
+      "link": "https://dev98.de/2017/02/23/deploying-magento2-future-prospects-44/",
+      "title": "Deploying Magento2 – Future Prospects [4/4]",
+      "pubDate": "2017-02-23T11:55:19+01:00",
+      "author": "Matthias Walter",
+      "summary": "This post is part of series: History and Overview of Magento2 Deployment Jenkins Build-Pipeline Setup (building assets, controlling the deployment) Releasing to Production (delivering code and assets, managing releases) Future Prospect (cloud deployment, artifacts) Recap In the previous posts we dived into our Deployment Pipeline and the Release to the staging or production environments. You should check those posts first before reading this one. In this post we will share our thoughts on where we want to go with our…",
+      "categories": [
+        "devop",
+        "magento-2"
+      ],
+      "tags": [
+        "deployer",
+        "deployment",
+        "jenkins",
+        "magento2"
+      ]
+    },
+    {
+      "id": "post-346",
+      "imgSrc": "https://dev98.de/wp-content/uploads/2017/02/img_dev98_20170210_cron-performance-featured_cm.png",
+      "link": "https://dev98.de/2017/02/13/cronjob-performance-optimization-magento-1-vs-magento-2/",
+      "title": "Cronjob performance optimization: Magento 1 vs. Magento 2",
+      "pubDate": "2017-02-13T10:00:44+01:00",
+      "author": "Alexander Dite",
+      "summary": "Introduction This article is about problems that can occur with Magento cronjobs. The standard way to configure crontab for Magento 1 has it’s limits. The more custom cronjobs  a Magento system has, the more probable the system will face problems considering cronjobs. The most common issues are: Indexer Cronjob (Magento Enterprise malways mode) takes longer than usual so that other cronjobs (mdefault mode) are skipped (not executed) for the time the indexer runs Some of the cronjobs in mdefault scope take a…",
+      "categories": [
+        "magento-1",
+        "magento-2"
+      ],
+      "tags": [
+        "cron",
+        "cronjob",
+        "crontab",
+        "performance"
+      ]
+    },
+    {
+      "id": "post-203",
+      "imgSrc": "https://dev98.de/wp-content/uploads/2017/01/n98_push_deployment_deployer_2.png",
+      "link": "https://dev98.de/2017/01/26/deploying-magento2-releasing-to-production-34/",
+      "title": "Deploying Magento2 – Releasing to Production [3/4]",
+      "pubDate": "2017-01-26T11:00:16+01:00",
+      "author": "Matthias Walter",
+      "summary": "This post is part of series: History and Overview of Magento2 Deployment Jenkins Build-Pipeline Setup (building assets, controlling the deployment) Releasing to Production (delivering code and assets, managing releases) Future Prospect (cloud deployment, artifacts) Recap In the last post Jenkins Build-Pipeline Setup we had a look at our Jenkins Build-Pipeline and how to the setup and configuration is done. If you haven’t read it yet you should probably do so before reading this post. The last step in our Build-Pipeline was the actual Deployment…",
+      "categories": [
+        "devop",
+        "magento-2"
+      ],
+      "tags": [
+        "deployer",
+        "deployment",
+        "jenkins",
+        "magento2"
+      ]
+    },
+    {
+      "id": "post-322",
+      "imgSrc": "https://dev98.de/wp-content/uploads/2017/01/338ea236-5348-11e6-903e-75cf1d35e986-1-1038x576.png",
+      "link": "https://dev98.de/2017/01/23/workaround-for-magento-2-issue-5418-product-grid-does-not-work-after-import/",
+      "title": "Workaround for Magento 2 Issue #5418 – Product Grid does not work after Import",
+      "pubDate": "2017-01-23T17:39:05+01:00",
+      "author": "David Lambauer",
+      "summary": "The Magento 2 Importer is a simple way to import and update Product Data and many more. Since July 2016, an Import will throw an Exception at the Product Grid. Today, I added a small script as a Workaround, which I want to share. It is actually simple and based on the Yonn-Trimoreau‘s SQL Query. I setup a bashscript, which enters the working dir and executes the query via n98-magerun2. After that, I added a CronJob to call the Script every…",
+      "categories": [
+        "magento-2"
+      ],
+      "tags": [
+        "bug",
+        "magento-2",
+        "magento2",
+        "mysql",
+        "opensource"
+      ]
+    },
+    {
+      "id": "post-302",
+      "imgSrc": "https://dev98.de/wp-content/uploads/2017/01/img_dev98_20170120_pre-commit-framework-featured_cm.png",
+      "link": "https://dev98.de/2017/01/23/a-framework-to-prevent-invalid-stuff-in-your-git-repository/",
+      "title": "A framework to prevent invalid stuff in your GIT repository",
+      "pubDate": "2017-01-23T09:00:00+01:00",
+      "author": "Christian Münch",
+      "summary": "The following blog post describes a a framework for managing and maintaining multi-language pre-commit hooks. The described methods adding a comprehensive quality gate to your publishing workflow. If you are using SVN instead of GIT you can skip this blog post 😛 The framework was designed by Yelp three years ago. It brings many pre defined checks designed for a generated GIT pre-commit hook. Most of the checks are made to to run against python files. This is not a blocker…",
+      "categories": [
+        "general"
+      ],
+      "tags": [
+        "git",
+        "hook",
+        "pre-commit",
+        "qa"
+      ]
+    },
+    {
+      "id": "post-281",
+      "imgSrc": "https://dev98.de/wp-content/uploads/2017/01/attribute_data_move.png",
+      "link": "https://dev98.de/2017/01/19/fixing-issues-after-changing-product-attribute-type-from-varchar-to-text/",
+      "title": "Fixing issues after changing product attribute type from varchar to text",
+      "pubDate": "2017-01-19T10:24:20+01:00",
+      "author": "Alexander Dite",
+      "summary": "In some cases there is a need to change the backend type of a catalog product attribute from varchar to text. The purpose of this change is to get more than 255 characters space for a string value. In this article I will cover the situation when problems occur after changing the backend type of an attribute. The Problem If the backend type of an attribute is changed, e.g. via install/upgrade script, Magento does not automatically copy and clean up old values….",
+      "categories": [
+        "magento-1"
+      ],
+      "tags": [
+        "attribute",
+        "eav",
+        "mysql"
+      ]
+    },
+    {
+      "id": "post-266",
+      "imgSrc": "https://dev98.de/wp-content/uploads/2017/01/img_dev98_20170115_psr-7-overview-feature_cm.png",
+      "link": "https://dev98.de/2017/01/17/psr-7-standard-part1-overview/",
+      "title": "PSR-7 Standard  – Part 1  – Overview",
+      "pubDate": "2017-01-17T09:00:27+01:00",
+      "author": "Christian Münch",
+      "summary": "This post is part of series: Part 1: Overview Part 2: Request and URI Part 3: Response Part 4: File Uploads Part 5: HTTP-Client Part 6: Server Request Part 7: Middleware Part 8: Usage in a Magento module This is the first post of my new PSR-7 series. If you already use PSR-7 in your daily life as programmer you can skip the first part of this post. What is PSR-7? PSR-7 is a standard defined by the PHP-FIG. It don’t like to repeat…",
+      "categories": [
+        "general"
+      ],
+      "tags": [
+        "http",
+        "php",
+        "psr",
+        "standard"
+      ]
+    },
+    {
+      "id": "post-234",
+      "imgSrc": "https://dev98.de/wp-content/uploads/2017/01/mysql_timeout.png",
+      "link": "https://dev98.de/2017/01/16/solving-a-2006-mysql-error-connection-timeout-in-magento1/",
+      "title": "Solving a 2006 MySQL error connection timeout in Magento1",
+      "pubDate": "2017-01-16T10:30:21+01:00",
+      "author": "Alexander Dite",
+      "summary": "In my recent task I was testing a web crawler script which uses Magento database information for the crawling requests. I have encountered the following error: Fatal error: Uncaught exception ‘PDOException’ with message ‘SQLSTATE[HY000]: General error: 2006 MySQL server has gone away’ in lib/Zend/Db/Statement/Pdo.php:228 The Problem This error occured after around 45 minutes of script runtime. The script was written in a way that it was possible that there is no database interaction for a longer period. In consequence to that…",
+      "categories": [
+        "general",
+        "magento-1"
+      ],
+      "tags": [
+        "connection",
+        "mysql",
+        "pdo"
+      ]
+    },
+    {
+      "id": "post-201",
+      "imgSrc": "https://dev98.de/wp-content/uploads/2017/01/jenkins_build_pipeline.png",
+      "link": "https://dev98.de/2017/01/11/deploying-magento2-jenkins-build-pipeline-24/",
+      "title": "Deploying Magento2 – Jenkins Build-Pipeline [2/4]",
+      "pubDate": "2017-01-11T16:15:05+01:00",
+      "author": "Matthias Walter",
+      "summary": "This post is part of series: History and Overview of Magento2 Deployment Jenkins Build-Pipeline Setup (building assets, controlling the deployment) Releasing to Production (delivering code and assets, managing releases) Future Prospect (cloud deployment, artifacts) Recap In the post Deploying Magento2 & History / Overview [1/4] we showed an overview of our deployment for Magento2 and this post will go into more detail on what is happing on the Build-Server and how it is done. So to get you up to speed, this is…",
+      "categories": [
+        "devop",
+        "magento-2"
+      ],
+      "tags": [
+        "deployer",
+        "deployment",
+        "jenkins",
+        "magento2"
+      ]
+    },
+    {
+      "id": "post-192",
+      "link": "https://dev98.de/2017/01/06/deploying-magento2-history-overview-14/",
+      "title": "Deploying Magento2 – History & Overview [1/4]",
+      "pubDate": "2017-01-06T10:05:50+01:00",
+      "author": "Matthias Walter",
+      "summary": "Quite recently we have updated the deployment of our Magento2 projects to a more flexible and reusable way. Originally I wanted to create one post to present you our deployment setup, the systems involved, the workflow & process and some code that might be interesting. While describing this subject I decided to create a series of posts to cover those parts as it was just getting to extensive for one post. I am planing to cover the following topics in separate posts: History and…",
+      "categories": [
+        "devop",
+        "magento-2"
+      ],
+      "tags": [
+        "composer",
+        "deployer",
+        "deployment",
+        "magento2"
+      ]
+    },
+    {
+      "id": "post-161",
+      "link": "https://dev98.de/2017/01/02/how-to-add-alternative-http-headers-to-magento-2/",
+      "title": "How to add alternative HTTP headers to Magento 2?",
+      "pubDate": "2017-01-02T15:00:37+01:00",
+      "author": "Christian Münch",
+      "summary": "If you have more than one frontend server running in your business, it’s needed to load balance the traffic between the nodes. In this case we have a new instance between the browser and the web-server. Often it’s a system like HAProxy or Varnish. If the load balancer or proxy receives a request from a browser, it forwards it to backend server in the internal network. The IP address of the client is than added to a forward header which contains…",
+      "categories": [
+        "magento-2"
+      ],
+      "tags": [
+        "di",
+        "http",
+        "proxy"
+      ]
+    },
+    {
+      "id": "post-132",
+      "link": "https://dev98.de/2016/12/28/how-to-create-a-category-image-attribute-in-magento-2/",
+      "title": "How to Create a Category Image Attribute in Magento 2",
+      "pubDate": "2016-12-28T14:26:55+01:00",
+      "author": "Matthias Walter",
+      "summary": "Creating a custom Category Attribute with an image upload is quite common feature requirement in our shops. So this blog-post will be about the steps you have to take to create a custom category attribute with an image upload in Magento 2. The post turned out to be quite long, but I wanted to provide a complete description of all steps necessary. So stay with us if your interested 🙂 Our Module is called `Dev98_CategoryAttributes` and the image attribute will be called…",
+      "categories": [
+        "magento-2"
+      ],
+      "tags": [
+        "attribute",
+        "category",
+        "image",
+        "ui-component",
+        "upload"
+      ]
+    },
+    {
+      "id": "post-115",
+      "link": "https://dev98.de/2016/12/21/how-to-create-attribute-options-in-magento2/",
+      "title": "How to create attribute-options in Magento2",
+      "pubDate": "2016-12-21T15:45:19+01:00",
+      "author": "Matthias Walter",
+      "summary": "Recently we had to create Configurable Products in our Product Import. To create those products we had to make sure that all simple products are generated before the configurable products and that all the attribute options for our configurable attribute are available. So this post will focus on how to create those attribute options and a problem where we had to spend some time figuring out. Preface We need to create those attribute options before we call $this->magentoImporter->validateSource($dataSource); otherwise the…",
+      "categories": [
+        "magento-2"
+      ],
+      "tags": [
+        "attribute",
+        "attribute-options",
+        "options"
+      ]
+    },
+    {
+      "id": "post-121",
+      "link": "https://dev98.de/2016/12/14/how-to-adjust-increment-ids-in-magento-2/",
+      "title": "How to adjust increment-ids in Magento 2",
+      "pubDate": "2016-12-14T13:36:57+01:00",
+      "author": "Matthias Walter",
+      "summary": "Maybe almost every Magento developer has had the task to customize the increment-ids for orders or customers in Magento. Recap Magento 1 In Magento 1 you had to change the column increment_prefix  in the table eav_entity_store . I am sure there are modules out there that let you achieve that in convenient way. We have done that by using Setup-scripts most of the time. When a new store is created you need set the increment_prefix afterwards and do so for all entities that you…",
+      "categories": [
+        "magento-2"
+      ],
+      "tags": [
+        "increment-id",
+        "order",
+        "sales",
+        "sequence"
+      ]
+    },
+    {
+      "id": "post-105",
+      "link": "https://dev98.de/2016/12/07/creating-configurable-products/",
+      "title": "Creating Configurable Products",
+      "pubDate": "2016-12-07T14:52:21+01:00",
+      "author": "Matthias Walter",
+      "summary": "Basically there are different ways for creating Configurable Products in Magento2 (like in Magento1). You can create it using the Admin Panel, using a Setup\\InstallData or Setup\\UpgradeData class or during a custom import. ADDING THE ATTRIBUTE Let’s assume we are creating our attribute using the Setup\\UpgradeData class in our module. The code we might initially create could look something like the following: protected function addAttributeDiameter() { $this->eavSetup->addAttribute( ProductModel::ENTITY, ‘dev98_diameter’, [ ‘type’ => ‘int’, ‘backend’ => ”, ‘frontend’ => ”, ‘label’ =>…",
+      "categories": [
+        "magento-2"
+      ],
+      "tags": [
+        "attribtue",
+        "configurable",
+        "configurable-products",
+        "product"
+      ]
+    },
+    {
+      "id": "post-93",
+      "link": "https://dev98.de/2016/11/19/a-multi-factor-authentication-quickstart/",
+      "title": "A Multi Factor Authentication Quickstart",
+      "pubDate": "2016-11-19T14:28:59+01:00",
+      "author": "David Lambauer",
+      "summary": "In the last couple of months, I started to dig deep into web security. I wanted to figure out, how the “dark side” works and how a hacker will act when he decided to penetrate my web application. So I downloaded a Kali Linux System, installed it on a virtual machine and started “hacking”… David Lambauerwww.davidlambauer.de",
+      "categories": [
+        "general"
+      ],
+      "tags": [
+        "multi-factor-authentication",
+        "password",
+        "password-manager",
+        "security",
+        "yubikey"
+      ]
+    },
+    {
+      "id": "post-80",
+      "link": "https://dev98.de/2016/11/03/thoughts-about-custom-attributes-and-the-way-to-manage-them/",
+      "title": "Thoughts about custom attributes and the way to manage them!",
+      "pubDate": "2016-11-03T22:47:23+01:00",
+      "author": "David Lambauer",
+      "summary": "To add or update an EAV attribute in Magento, it is necessary to add setup scripts to your code base. If you don’t handle your custom attributes in setup scripts, you are not able to install your project from scratch, which could cause a lot of problems. For example, it makes it harder to run unit- and integration tests. So lets assume that we are working in a team with 4 developers and everybody has a different task. Each task…",
+      "categories": [
+        "magento-1",
+        "magento-2"
+      ],
+      "tags": [
+        "best-practice",
+        "eav",
+        "magento",
+        "magento-2",
+        "setup-attributes"
+      ]
+    },
+    {
+      "id": "post-66",
+      "link": "https://dev98.de/2016/11/03/docker-simplified-container-mapping-for-local-development/",
+      "title": "Docker: Simplified container mapping for local development",
+      "pubDate": "2016-11-03T17:35:58+01:00",
+      "author": "Simon Schröer",
+      "summary": "When you are working with docker on your local machine, you often have to map your local ports to different container and end up in a port-mapping-mess like this: localhost:80 -> Local apache for native stuff localhost:8080 -> Docker container with apache for testing localhost:8100 -> Some sort of dockered WebApp … localhost:59924 -> “Yea, well … don’t know, lets check docker process-list …” To simplify this mess, we created a little proxy-script (+ environment setup) that will make your life…",
+      "categories": [
+        "devop",
+        "general"
+      ],
+      "tags": [
+        "devop",
+        "docker",
+        "go",
+        "golang",
+        "opensource",
+        "proxy"
+      ]
+    },
+    {
+      "id": "post-32",
+      "link": "https://dev98.de/2016/08/03/array-does-not-exist-in-webapi/",
+      "title": "Array does not exist in webapi",
+      "pubDate": "2016-08-03T01:19:27+02:00",
+      "author": "Christian Münch",
+      "summary": "The Magento 2 webapi is very useful to publish entities to the world. One big advantages of the new webapi is the automatic generation of a swagger schema for RESTful API. If you prefer SOAP over REST you should also be happy to heat that Magento 2 will automatically generate all the WSDL stuff. Magento 2 analyses all the published classes/methods via PHP reflection. Any generated WSDL file contains a XSD with all the types used in the webservices. In…",
+      "categories": [
+        "general",
+        "magento-2"
+      ],
+      "tags": [
+        "array",
+        "rest",
+        "soap",
+        "webapi"
+      ]
+    }
+  ]
+}
